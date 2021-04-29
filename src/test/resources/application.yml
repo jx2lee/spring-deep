@@ -1,0 +1,21 @@
+spring:
+#  datasource:
+#    url: jdbc:h2:mem:test
+#    username: sa
+#    password:
+#    driver-class-name: org.h2.Driver
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: create
+#    properties:
+#      hibernate:
+#        show_sql: true
+#        format_sql: true
+# 상기 내용을 적지 않아도 h2 가 memory 형태로 자동 실행됨
+# 내용을 작성하지 않아도 된다.
+
+logging:
+  level:
+    org.hibernate.SQL: debug
+    org.hibernate.type: trace

@@ -1,0 +1,7 @@
+.idea/
+.gradle/
+build/
+h2/
+out/
+
+jpashop.mv.db

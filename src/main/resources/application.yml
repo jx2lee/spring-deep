@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/workspace/programming/java/spring/jpashop/jpashop
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create # app 재실행 후에 테이블 drop 수행 (데이터 삭제됨)
+#      ddl-auto: none # app 재실행 후에도 테이블 drop 을 수행하지 않음 (데이터 삭제되지 않음)
+    properties:
+      hibernate:
+#        show_sql: true
+        format_sql: true
+        default_batch_fetch_size: 1000
+
+logging:
+  level:
+    org.hibernate.SQL: debug
+#    org.hibernate.type: trace
